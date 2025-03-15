@@ -1,0 +1,6 @@
+import sys
+
+N = int(sys.stdin.readline().strip())
+zero_count = sum(1 for _ in range(N) if int(sys.stdin.readline().strip()) == 0)
+
+print(zero_count)
