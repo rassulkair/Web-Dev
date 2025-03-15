@@ -1,0 +1,8 @@
+import sys
+
+N = int(sys.stdin.readline().strip())
+
+power = 1
+while power <= N:
+    print(power, end=" ")
+    power *= 2 
