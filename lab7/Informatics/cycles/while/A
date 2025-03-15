@@ -1,0 +1,8 @@
+import sys
+
+N = int(sys.stdin.readline().strip())
+
+k = 1
+while k * k <= N:
+    print(k * k)
+    k += 1
