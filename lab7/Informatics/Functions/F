@@ -1,0 +1,12 @@
+def power(a, n):
+    if n == 0:
+        return 1  # a^0 = 1
+    elif n > 0:
+        return a * power(a, n - 1) 
+    else:
+        return 1 / power(a, -n) 
+
+a, n = map(float, input().split())
+
+n = int(n)
+print(power(a, n))
